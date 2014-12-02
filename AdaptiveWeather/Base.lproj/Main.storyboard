@@ -48,13 +48,41 @@
                         <color key="backgroundColor" red="0.29019607843137252" green="0.6705882352941176" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="FwZ-dx-gW7" firstAttribute="top" secondItem="jjb-iF-PeT" secondAttribute="bottom" constant="20" id="0Fg-hR-G5j"/>
+                            <constraint firstItem="jjb-iF-PeT" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.45" id="5RP-YK-0pV"/>
                             <constraint firstItem="jjb-iF-PeT" firstAttribute="height" relation="lessThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.4" id="7IQ-u1-jCD"/>
                             <constraint firstItem="jjb-iF-PeT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="9dj-BW-pRI"/>
                             <constraint firstAttribute="centerX" secondItem="jjb-iF-PeT" secondAttribute="centerX" id="Ii2-Cv-Bev"/>
+                            <constraint firstItem="jjb-iF-PeT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="a8a-m7-MsE"/>
+                            <constraint firstItem="FwZ-dx-gW7" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="aJ6-LO-LK4"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="FwZ-dx-gW7" secondAttribute="bottom" id="ben-g6-4Ca"/>
+                            <constraint firstAttribute="centerY" secondItem="jjb-iF-PeT" secondAttribute="centerY" id="dMp-ut-ShR"/>
+                            <constraint firstItem="FwZ-dx-gW7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="jXZ-Km-qyg"/>
                             <constraint firstItem="FwZ-dx-gW7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="mVR-YV-d7h"/>
                             <constraint firstAttribute="trailing" secondItem="FwZ-dx-gW7" secondAttribute="trailing" id="rqd-xA-LSN"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="5RP-YK-0pV"/>
+                                <exclude reference="a8a-m7-MsE"/>
+                                <exclude reference="dMp-ut-ShR"/>
+                                <exclude reference="aJ6-LO-LK4"/>
+                                <exclude reference="jXZ-Km-qyg"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="5RP-YK-0pV"/>
+                                <exclude reference="7IQ-u1-jCD"/>
+                                <exclude reference="9dj-BW-pRI"/>
+                                <exclude reference="Ii2-Cv-Bev"/>
+                                <include reference="a8a-m7-MsE"/>
+                                <include reference="dMp-ut-ShR"/>
+                                <exclude reference="0Fg-hR-G5j"/>
+                                <include reference="aJ6-LO-LK4"/>
+                                <include reference="jXZ-Km-qyg"/>
+                                <exclude reference="mVR-YV-d7h"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
